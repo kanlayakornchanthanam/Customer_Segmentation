@@ -50,21 +50,26 @@ div[data-testid="stSlider"] div[role="slider"] {
     border:2px solid #1a472a !important;
 }
 div[data-testid="stSlider"] div[data-testid="stTickBar"] { color:#5a8a6e !important; }
-div[data-testid="stSlider"] p {
-    color:#2d6a4f !important;
-    font-family:'Montserrat',sans-serif !important;
-    font-weight:700 !important;
-    font-size:0.82rem !important;
+div[data-testid="stSlider"] p,
+div[data-testid="stSlider"] p *,
+div[data-testid="stSlider"] span,
+div[data-testid="stSlider"] div[data-testid="stTickBarMin"],
+div[data-testid="stSlider"] div[data-testid="stTickBarMax"] {
+    color: #2d6a4f !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
 }
+div[data-testid="stSlider"] div[role="slider"] { background:#2d6a4f !important; border:2px solid #1a472a !important; }
 div[data-testid="stSlider"] div[role="slider"]:hover { background:#1a472a !important; }
-div[data-testid="stSlider"] [data-baseweb="tooltip"] {
-    background:#2d6a4f !important;
-    color:#ffffff !important;
-    border-radius:6px !important;
-}
+div[data-testid="stSlider"] div[role="slider"]:active { background:#1a472a !important; }
+div[data-testid="stSlider"] [data-baseweb="tooltip"],
+div[data-testid="stSlider"] [data-baseweb="tooltip"] *,
 div[data-testid="stSlider"] [data-baseweb="tooltip"] div {
-    color:#ffffff !important;
-    font-weight:700 !important;
+    background: #2d6a4f !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
 }
 
 .stTabs [data-baseweb="tab-list"] { background:#f2f8f4; border-radius:10px; padding:4px; gap:4px; border:1px solid #d0e8d8; }
