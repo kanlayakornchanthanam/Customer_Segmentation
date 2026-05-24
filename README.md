@@ -6,16 +6,14 @@ A complete end-to-end machine learning project that segments mall customers into
 
 ## 🔗 Live Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
-
-> Replace the link above with your Streamlit Cloud URL after deploying.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)][(https://customer-segmentation-bykandy.streamlit.app/)]
 
 ---
 
 ## 📁 Project Structure
 
 ```
-mall-customer-segmentation/
+Customer-segmentation/
 │
 ├── notebooks/
 │   ├── Part1_Clustering.ipynb       # EDA + K-Means + Hierarchical + DBSCAN
@@ -117,7 +115,8 @@ mall-customer-segmentation/
 
 | Model | CV Accuracy | Test Accuracy |
 |---|---|---|
-| Logistic Regression | 0.9625 | 0.975 |
+| Logistill
+c Regression | 0.9625 | 0.975 |
 | Random Forest | 0.9688 | 0.975 |
 | XGBoost | 0.9438 | 0.975 |
 | SVM | 0.9750 | 0.975 |
