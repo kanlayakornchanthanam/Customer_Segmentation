@@ -34,9 +34,38 @@ h1,h2,h3,h4,.montserrat { font-family: 'Montserrat', sans-serif !important; }
 div[data-testid="stButton"] > button { background-color:#2d6a4f !important; color:#ffffff !important; font-family:'Montserrat',sans-serif !important; font-weight:600 !important; font-size:0.85rem !important; border:none !important; border-radius:8px !important; padding:10px 0 !important; width:100% !important; letter-spacing:0.04em; }
 div[data-testid="stButton"] > button:hover { background-color:#1a472a !important; }
 
-div[data-testid="stSelectbox"] > div { border-color:#2d6a4f !important; border-radius:8px !important; background:#ffffff !important; }
+div[data-testid="stSelectbox"] > div { border-color:#2d6a4f !important; border-radius:8px !important; background:#ffffff !important; color:#1a1a1a !important; }
+div[data-testid="stSelectbox"] > div > div { background:#ffffff !important; color:#1a1a1a !important; }
+div[data-testid="stSelectbox"] input { background:#ffffff !important; color:#1a1a1a !important; }
+[data-baseweb="select"] > div { background:#ffffff !important; color:#1a1a1a !important; border-color:#2d6a4f !important; border-radius:8px !important; }
+[data-baseweb="select"] span { color:#1a1a1a !important; }
+[data-baseweb="popover"] ul { background:#ffffff !important; }
+[data-baseweb="popover"] li { background:#ffffff !important; color:#1a1a1a !important; }
+[data-baseweb="popover"] li:hover { background:#f0f9f3 !important; }
+
 .stSlider > div > div > div { background:#2d6a4f !important; }
 .stSlider > div > div > div > div { background:#2d6a4f !important; }
+div[data-testid="stSlider"] div[role="slider"] {
+    background:#2d6a4f !important;
+    border:2px solid #1a472a !important;
+}
+div[data-testid="stSlider"] div[data-testid="stTickBar"] { color:#5a8a6e !important; }
+div[data-testid="stSlider"] p {
+    color:#2d6a4f !important;
+    font-family:'Montserrat',sans-serif !important;
+    font-weight:700 !important;
+    font-size:0.82rem !important;
+}
+div[data-testid="stSlider"] div[role="slider"]:hover { background:#1a472a !important; }
+div[data-testid="stSlider"] [data-baseweb="tooltip"] {
+    background:#2d6a4f !important;
+    color:#ffffff !important;
+    border-radius:6px !important;
+}
+div[data-testid="stSlider"] [data-baseweb="tooltip"] div {
+    color:#ffffff !important;
+    font-weight:700 !important;
+}
 
 .stTabs [data-baseweb="tab-list"] { background:#f2f8f4; border-radius:10px; padding:4px; gap:4px; border:1px solid #d0e8d8; }
 .stTabs [data-baseweb="tab"] { font-family:'Montserrat',sans-serif !important; font-size:0.78rem; font-weight:600; color:#5a8a6e; border-radius:7px; padding:7px 16px; background:transparent; }
@@ -277,7 +306,7 @@ with tab4:
     st.markdown("<div class='section-heading'>All Customer Segments</div>", unsafe_allow_html=True)
     for i,seg in SEGMENTS.items():
         count=int(np.sum(y_clust==i)); pct=count/len(y_clust)*100
-        with st.expander(f"{seg['icon']}  Cluster {i} — {seg['name']}  ({count} customers · {pct:.0f}%)", expanded=(i==4)):
+        with st.expander(f"Cluster {i}: {seg['name']} | {count} customers ({pct:.0f}%)", expanded=(i==4)):
             ca,cb=st.columns([1.6,1])
             with ca:
                 st.markdown(f"""<div style='border-left:4px solid {seg["color"]};border-radius:0 10px 10px 0;background:#f7faf8;padding:14px 18px;'>
