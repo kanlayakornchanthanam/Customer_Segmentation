@@ -62,7 +62,7 @@ mall-customer-segmentation/
 
 ## 🔬 Methodology
 
-### Part 1 — Unsupervised Clustering (`Part1_Clustering.ipynb`)
+### [Part 1 — Unsupervised Clustering (`ML_Customer_segmentation_part1.ipynb`)](https://colab.research.google.com/github/kanlayakornchanthanam/Customer_Segmentation/blob/main/Notebooks/Part1_Clustering.ipynb)
 
 **Goal:** Find the natural customer segments without any labels.
 
@@ -77,12 +77,11 @@ mall-customer-segmentation/
 | Model comparison | Silhouette, Davies-Bouldin, Calinski-Harabasz → best model selected |
 | Export | `clustered_customers.csv` saved for Part 2 |
 
-> **Why not include Gender in clustering?**
-> Gender was tested and reduced the Silhouette Score — it added noise rather than signal. Dropped from clustering but included in the classifier.
+> **Why not include Gender in clustering?** Gender was tested and reduced the Silhouette Score — it added noise rather than signal. Dropped from clustering but included in the classifier.
 
 ---
 
-### Part 2 — Supervised Classifier (`Part2_Classifier.ipynb`)
+### [Part 2 — Supervised Classifier (`ML_Customer_segmentation_part2.ipynb`)](https://colab.research.google.com/github/kanlayakornchanthanam/Customer_Segmentation/blob/main/Notebooks/Part2_Classifier.ipynb)
 
 **Goal:** Train a classifier to predict the segment of a brand new customer without re-running clustering.
 
@@ -156,8 +155,8 @@ The app has 4 tabs:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/mall-customer-segmentation.git
-cd mall-customer-segmentation
+git clone https://github.com/kanlayakornchanthanam/Customer_Segmentation.git
+cd Customer_Segmentation
 
 # 2. Install dependencies
 pip install -r app/requirements.txt
@@ -174,7 +173,7 @@ streamlit run app/app.py
 2. Go to [share.streamlit.io](https://share.streamlit.io)
 3. Click **New app**
 4. Set:
-   - **Repository:** `your-username/mall-customer-segmentation`
+   - **Repository:** `kanlayakornchanthanam/Customer_Segmentation`
    - **Branch:** `main`
    - **Main file path:** `app/app.py`
 5. Click **Deploy**
@@ -207,9 +206,7 @@ streamlit run app/app.py
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+- GitHub: [@kanlayakornchanthanam](https://github.com/kanlayakornchanthanam)
 
 ---
 
