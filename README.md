@@ -1,4 +1,4 @@
-# Mall Customer_Segmentation
+# Mall Customer Segmentation
 
 A complete end-to-end machine learning project that segments mall customers into distinct groups using unsupervised clustering, then builds a supervised classifier to predict segments for new customers — deployed as an interactive Streamlit dashboard.
 
