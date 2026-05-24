@@ -105,24 +105,24 @@ mall-customer-segmentation/
 
 ### Clustering (Part 1)
 
-| Model | Silhouette ↑ | Davies-Bouldin ↓ | Calinski-Harabasz ↑ |
-|---|---|---|---|
-| K-Means | — | — | — |
-| Hierarchical | — | — | — |
-| DBSCAN | — | — | — |
+| Model | n_clusters | Silhouette ↑ | Davies-Bouldin ↓ | Calinski-Harabasz ↑ |
+|---|---|---|---|---|
+| K-Means | 5 | 0.5547 | 0.5722 | 248.6493 |
+| Hierarchical | 5 | 0.5538 | 0.5779 | 244.4103 |
+| DBSCAN* | 2 | 0.3876 | 0.7889 | 85.3897 |
 
-> Fill in your actual scores after running Part 1.
+✅**Best model: K-Means** — highest Silhouette Score and lowest Davies-Bouldin Index.
 
 ### Classification (Part 2)
 
 | Model | CV Accuracy | Test Accuracy |
 |---|---|---|
-| Logistic Regression | — | — |
-| Random Forest | — | — |
-| XGBoost | — | — |
-| SVM | — | — |
+| Logistic Regression | 0.9625 | 0.975 |
+| Random Forest | 0.9688 | 0.975 |
+| XGBoost | 0.9438 | 0.975 |
+| SVM | 0.9750 | 0.975 |
 
-> Fill in your actual scores after running Part 2.
+✅**Best classifier: SVM** — highest CV accuracy (0.9750).
 
 ---
 
