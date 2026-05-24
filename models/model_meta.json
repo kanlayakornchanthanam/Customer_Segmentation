@@ -1,0 +1,12 @@
+{
+  "feature_cols": [
+    "Age",
+    "Gender_encoded",
+    "Annual Income (k$)",
+    "Spending Score (1-100)"
+  ],
+  "best_model": "SVM",
+  "n_clusters": 5,
+  "cv_accuracy": 0.975,
+  "test_accuracy": 0.975
+}
