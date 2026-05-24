@@ -6,7 +6,7 @@ A complete end-to-end machine learning project that segments mall customers into
 
 ## 🔗 Live Demo
 
-[StreamlitApp](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)][(https://customer-segmentation-bykandy.streamlit.app/)
+[[Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)][(https://customer-segmentation-bykandy.streamlit.app/)
 
 ---
 
