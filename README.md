@@ -21,7 +21,7 @@ mall-customer-segmentation/
 │   ├── Part1_Clustering.ipynb       # EDA + K-Means + Hierarchical + DBSCAN
 │   └── Part2_Classifier.ipynb       # LR + RF + XGBoost + SVM + Streamlit export
 │
-├── app/
+├── customer_segmentation_app/streamlit_app/
 │   ├── app.py                       # Streamlit dashboard
 │   ├── requirements.txt
 │   └── .streamlit/
